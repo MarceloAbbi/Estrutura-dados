@@ -49,7 +49,7 @@ typedef struct fila Fila;
 	return l;
 }
 
-/*Fila* inserir_prioridade(Fila* l, Fila* no){
+Fila* inserir_prioridade(Fila* l, Fila* no){
 	if (l->cartao == 'V'){
 		no->prox = l;
 		l = no;
@@ -65,7 +65,7 @@ typedef struct fila Fila;
 	}
 }*/
 
-/*Fila* inserir(Fila* l, int numero, char cor) {
+Fila* inserir(Fila* l, int numero, char cor) {
 	Fila* no = (Fila*) malloc(sizeof(Fila));
 	no->numero = numero;
 	no->cor = cor;
@@ -88,8 +88,6 @@ int main(){
     int ini = -1;
     int fim = 0;
     int op, valor;
-    
-    
     
     do{
     	printf("---- Digite a opcao desejada ----\n\n");
@@ -116,6 +114,12 @@ int main(){
 		case 2:
 			remFila(fila,tam,ini,&fim);
 			exibeFila(fila,fim);
+			break;
+		case 3:
+			break;
+		case 4: 
+			break;
+		case 5:
 			break;
 		case 9:
 			printf("Saindo\n");
